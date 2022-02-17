@@ -111,7 +111,21 @@ func myCtxDecoder(traceTag string) zapctx.CtxDecoderFunc {
 
 ```
 
-4. Use `zapctx.Gorm2` to create a gorm(v2) logger.
+4. Use `zapctx.WithRotateOption` to back up log file.
+
+```go
+package main
+
+import (
+	"github.com/wuhongbing/zapctx"
+)
+
+func main() {
+	logger := zapctx.New(zapctx.WithLogPathOption("/tmp/main.log"), zapctx.WithRotateOption(7,3,true))
+	defer logger.Sync()
+}
+```
+5. Use `zapctx.Gorm2` to create a gorm(v2) logger.
 
 ```go
 package main
