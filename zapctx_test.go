@@ -53,8 +53,8 @@ type tt struct {
 }
 
 func (t *tt) s1(ctx context.Context) {
-	t.logger.WithContext(ctx)
+	t.logger.WithContext(ctx).Info("test")
 }
 func (t *tt) s2() {
-	t.logger.With(zap.String(traceID, "1-1-1-1-1"))
+	t.logger.With(zap.String(traceID, "1-1-1-1-1")).Info("test")
 }

@@ -9,11 +9,11 @@ zapctx is an encapsulation of [zap](https://github.com/uber-go/zap), adding With
 
 ```bash
 # Go Modules
-require github.com/wuhongbing/brickset
+require github.com/lehoqi/brickset
 ```
 
 ```shell
-go get github.com/wuhongbing/zapctx
+go get github.com/lehoqi/zapctx
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/wuhongbing/zapctx"
+	"github.com/lehoqi/zapctx"
 )
 func main() {
 	var traceID = "trace_id"
@@ -57,7 +57,7 @@ import (
     "context"
     "math/rand"
 	
-    "github.com/wuhongbing/zapctx"
+    "github.com/lehoqi/zapctx"
 	"go.uber.org/zap"
 )
 
@@ -86,7 +86,7 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/wuhongbing/zapctx"
+	"github.com/lehoqi/zapctx"
 	"go.uber.org/zap"
 )
 
@@ -117,7 +117,7 @@ func myCtxDecoder(traceTag string) zapctx.CtxDecoderFunc {
 package main
 
 import (
-	"github.com/wuhongbing/zapctx"
+	"github.com/lehoqi/zapctx"
 )
 
 func main() {
@@ -131,7 +131,7 @@ func main() {
 package main
 
 import (
-	"github.com/wuhongbing/zapctx"
+	"github.com/lehoqi/zapctx"
 )
 
 func main() {

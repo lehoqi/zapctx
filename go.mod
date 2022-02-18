@@ -1,4 +1,4 @@
-module github.com/wuhongbing/zapctx
+module github.com/lehoqi/zapctx
 
 go 1.16
 
